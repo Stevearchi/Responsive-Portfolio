@@ -110,7 +110,8 @@ footer {
   height: 50px;
 }
 
-h3, h2 {
+h3,
+h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
@@ -214,4 +215,38 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media only screen and (max-width: 980px) {
+  nav {
+    position: relative;
+    left: -61px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    overflow: auto;
+  }
+
+  nav {
+    position: relative;
+    left: -123px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  header {
+    position: static;
+  }
+
+  nav {
+    position: relative;
+    top: 71px;
+    left: -368px;
+  }
+
+  #masthead {
+    height: 137px
+  }
 }
